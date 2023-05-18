@@ -27,7 +27,7 @@ app.get('/feedback', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/pages/feedback.html'))
 );
 
-// GET Route for wildcard routes
+// GET Route for wildcard paths
 app.get('*', (req, res) =>
   res.send("Hello")
 );

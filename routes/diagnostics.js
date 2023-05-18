@@ -10,11 +10,13 @@ diagnostics.get('/', (req, res) => {
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
   const { errors } = req.body;
+  // TO DO: Do I want to check it always has the correct properties?
 
   if (errors) {
     const newError = {
       errors,
       error_id: uuidv4(),
+      // TO DO: Add time stamp to each error.
     };
 
     readAndAppend(newError, './db/diagnostics.json');

@@ -25,5 +25,13 @@
             "topic": "",
             "username": " Username is too short"
         }
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "03fd1d37-bb1b-422d-b1ee-1e56070fca05"
     }
 ]

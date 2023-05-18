@@ -29,7 +29,7 @@ app.get('/feedback', (req, res) =>
 
 // GET Route for wildcard paths
 app.get('*', (req, res) =>
-  res.send("Hello")
+  res.sendFile(path.join(__dirname, '/public/pages/404.html'))
 );
 
 app.listen(PORT, () =>

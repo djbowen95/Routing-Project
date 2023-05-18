@@ -9,6 +9,27 @@ diagnostics.get('/', (req, res) => {
 
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
+  const { errors } = req.body;
+
+  if (errors) {
+    const newError = {
+      errors,
+      error_id: uuidv4(),
+    };
+
+    readAndAppend(newError, './db/diagnostics.json');
+
+    const response = {
+      status: success,
+      body: newError,
+    }
+
+    res.json(response)
+  } else {
+    res.json('Error in posting to diagnostics');
+  }
+
+
   // TODO: Logic for appending data to the db/diagnostics.json file
 });
 

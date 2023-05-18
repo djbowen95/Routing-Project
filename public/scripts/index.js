@@ -132,11 +132,9 @@ const submitDiagnostics = (submissionObj) => {
     },
     body: JSON.stringify(submissionObj),
   }).then((response) => response.json())
-  .then((data) => {
-    alert("Error! Your submission is invalid.");
-    const errors = submissionObj.errors;
-    alert(JSON.stringify(errors.tip) + '\n' + JSON.stringify(errors.username) + '\n' + JSON.stringify(errors.topic));
-  })
+  .then((data) => { // Don't actually need to .then((data) => {}) unless parsing it.
+    alert("Error! Your submission is invalid. \n Your username must be at least 4 characters, and your tip must be at least fifteen characters long. Please try again.");
+   })
 };
 
 // Function to handle when a user submits the feedback form

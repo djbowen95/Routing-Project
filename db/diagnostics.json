@@ -73,5 +73,21 @@
             "topic": ""
         },
         "error_id": "2249c613-b3b2-4660-a999-ca839e840083"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "40a5740b-d438-4e0a-b41f-57a708fa7c2c"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "5bf767fa-bf53-449a-b050-6d002b637c3d"
     }
 ]

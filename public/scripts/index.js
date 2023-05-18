@@ -131,9 +131,12 @@ const submitDiagnostics = (submissionObj) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(submissionObj),
-  }).then((response) => response.json());
-
-  alert("ALERT!");
+  }).then((response) => response.json())
+  .then((data) => {
+    alert("Error! Your submission is invalid.");
+    const errors = submissionObj.errors;
+    alert(JSON.stringify(errors.tip) + '\n' + JSON.stringify(errors.username) + '\n' + JSON.stringify(errors.topic));
+  })
 };
 
 // Function to handle when a user submits the feedback form

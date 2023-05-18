@@ -33,5 +33,45 @@
             "topic": ""
         },
         "error_id": "03fd1d37-bb1b-422d-b1ee-1e56070fca05"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "e0574e1b-ba8c-4fc2-b7ff-7268f64c3cc0"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "87f162e5-8fbe-4ce3-b7a3-f135ec60e6de"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "b4b6a046-5e91-43f9-bffe-b44dbedd083d"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "521b86b2-4963-43d4-bbfb-311a61c0958b"
+    },
+    {
+        "errors": {
+            "username": "Invalid username!",
+            "tip": "Tip must be at least 15 characters",
+            "topic": ""
+        },
+        "error_id": "2249c613-b3b2-4660-a999-ca839e840083"
     }
 ]

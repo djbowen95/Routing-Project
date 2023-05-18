@@ -4,12 +4,32 @@ const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 // GET Route for retrieving diagnostic information
 diagnostics.get('/', (req, res) => {
-  // TODO: Logic for sending all the content of db/diagnostics.json
+  readFromFile('./db/diagnostics.json').then((data) => res.json(JSON.parse(data)))
 });
 
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
-  // TODO: Logic for appending data to the db/diagnostics.json file
+  const { errors } = req.body;
+  // TO DO: Do I want to check it always has the correct properties?
+
+  if (errors) {
+    const newError = {
+      errors,
+      error_id: uuidv4(),
+      // TO DO: Add time stamp to each error.
+    };
+
+    readAndAppend(newError, './db/diagnostics.json');
+
+    const response = {
+      status: 'success',
+      body: newError,
+    }
+
+    res.json(response)
+  } else {
+    res.json('Error in posting to diagnostics');
+  }
 });
 
 module.exports = diagnostics;

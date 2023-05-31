@@ -5,6 +5,8 @@ It was built with [starter code](#about-the-project). I added additional GET and
 
 I aim to deploy this application to Amazon Web Services soon with EC2.
 
+## Contents
+
 1. [About the Project](#about-the-project)
 2. [Using the Routing Project](#using-the-routing-project)
 3. [Technology Stack](#technology-stack)
